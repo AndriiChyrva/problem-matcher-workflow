@@ -1,0 +1,10 @@
+name: problem-matcher-workflow
+run-name: ${{github.actor}} is running problem-matcher-action
+on:
+  workflow_dispatch
+jobs:
+  annotations-job:
+    runs-on: ubuntu-latest
+    steps:
+      - id: run_action
+        uses: AndriiChyrva/problem-matcher-action@v1.0.1
