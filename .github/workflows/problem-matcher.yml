@@ -3,7 +3,7 @@ run-name: ${{github.actor}} is running problem-matcher-action
 on:
   workflow_dispatch
 jobs:
-  annotations-job:
+  problem-matcher-job:
     runs-on: ubuntu-latest
     steps:
       - id: run_action
